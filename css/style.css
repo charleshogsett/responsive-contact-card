@@ -1,0 +1,126 @@
+
+html {
+    padding: 0;
+	margin: 10px;
+}
+body {
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: #f9f9f9;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+        align-content: center;
+
+
+    background-color: #fad3a9;
+}
+
+    .picture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+    }
+
+img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.contact > div {
+    
+    text-align: center;
+
+
+}
+
+.name {
+    margin: 15px;
+}
+
+.company {
+    margin: 20px;
+}
+
+@media (min-width: 600px) {
+    
+
+    .picture {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 400px; /* Or whatever size you want */
+  height: auto;
+  display: block;
+}
+
+
+.container > .contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+}
+
+
+@media (min-width: 800px) {
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 800px;
+
+    background-color: #fad3a9;
+    margin: 0 auto;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: fit-content;
+    width: 100%;
+    text-align: center;
+
+}
+.name {
+    margin: 30px;
+}
+
+.company {
+    margin: 30px;
+}
+
+}
